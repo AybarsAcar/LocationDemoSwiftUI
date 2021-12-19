@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009BAA30276EE9840089DD8B /* MKCoordinateRegionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA2F276EE9840089DD8B /* MKCoordinateRegionExtensions.swift */; };
+		009BAA35276EEB910089DD8B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA34276EEB910089DD8B /* LocationManager.swift */; };
+		009BAA38276EED780089DD8B /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA37276EED780089DD8B /* PlaceListViewModel.swift */; };
+		009BAA3B276EFB670089DD8B /* LandMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA3A276EFB670089DD8B /* LandMark.swift */; };
+		009BAA3E276F06040089DD8B /* LandMarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA3D276F06040089DD8B /* LandMarkListView.swift */; };
+		009BAA40276F07510089DD8B /* LandMarkCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA3F276F07510089DD8B /* LandMarkCategoryView.swift */; };
+		009BAA42276F0BF10089DD8B /* RecenterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009BAA41276F0BF10089DD8B /* RecenterButton.swift */; };
 		00EE0D63276E9FAD00C15391 /* LocationDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0D62276E9FAD00C15391 /* LocationDemoApp.swift */; };
 		00EE0D65276E9FAD00C15391 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE0D64276E9FAD00C15391 /* ContentView.swift */; };
 		00EE0D67276E9FAF00C15391 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00EE0D66276E9FAF00C15391 /* Assets.xcassets */; };
@@ -14,6 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009BAA2F276EE9840089DD8B /* MKCoordinateRegionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKCoordinateRegionExtensions.swift; sourceTree = "<group>"; };
+		009BAA34276EEB910089DD8B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		009BAA37276EED780089DD8B /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		009BAA39276EF5680089DD8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		009BAA3A276EFB670089DD8B /* LandMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMark.swift; sourceTree = "<group>"; };
+		009BAA3D276F06040089DD8B /* LandMarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkListView.swift; sourceTree = "<group>"; };
+		009BAA3F276F07510089DD8B /* LandMarkCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandMarkCategoryView.swift; sourceTree = "<group>"; };
+		009BAA41276F0BF10089DD8B /* RecenterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecenterButton.swift; sourceTree = "<group>"; };
 		00EE0D5F276E9FAD00C15391 /* LocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00EE0D62276E9FAD00C15391 /* LocationDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDemoApp.swift; sourceTree = "<group>"; };
 		00EE0D64276E9FAD00C15391 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +47,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009BAA2E276EE96E0089DD8B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				009BAA2F276EE9840089DD8B /* MKCoordinateRegionExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		009BAA31276EEB200089DD8B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				009BAA34276EEB910089DD8B /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		009BAA36276EED6B0089DD8B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				009BAA37276EED780089DD8B /* PlaceListViewModel.swift */,
+				009BAA3A276EFB670089DD8B /* LandMark.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		009BAA3C276F05EE0089DD8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				009BAA3D276F06040089DD8B /* LandMarkListView.swift */,
+				009BAA3F276F07510089DD8B /* LandMarkCategoryView.swift */,
+				009BAA41276F0BF10089DD8B /* RecenterButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		00EE0D56276E9FAD00C15391 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +101,15 @@
 		00EE0D61276E9FAD00C15391 /* LocationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				00EE0D62276E9FAD00C15391 /* LocationDemoApp.swift */,
+				009BAA39276EF5680089DD8B /* Info.plist */,
 				00EE0D64276E9FAD00C15391 /* ContentView.swift */,
+				00EE0D62276E9FAD00C15391 /* LocationDemoApp.swift */,
 				00EE0D66276E9FAF00C15391 /* Assets.xcassets */,
+				009BAA2E276EE96E0089DD8B /* Extensions */,
+				009BAA31276EEB200089DD8B /* Managers */,
 				00EE0D68276E9FAF00C15391 /* Preview Content */,
+				009BAA36276EED6B0089DD8B /* ViewModels */,
+				009BAA3C276F05EE0089DD8B /* Views */,
 			);
 			path = LocationDemo;
 			sourceTree = "<group>";
@@ -137,8 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009BAA40276F07510089DD8B /* LandMarkCategoryView.swift in Sources */,
+				009BAA35276EEB910089DD8B /* LocationManager.swift in Sources */,
+				009BAA30276EE9840089DD8B /* MKCoordinateRegionExtensions.swift in Sources */,
 				00EE0D65276E9FAD00C15391 /* ContentView.swift in Sources */,
+				009BAA42276F0BF10089DD8B /* RecenterButton.swift in Sources */,
+				009BAA38276EED780089DD8B /* PlaceListViewModel.swift in Sources */,
 				00EE0D63276E9FAD00C15391 /* LocationDemoApp.swift in Sources */,
+				009BAA3E276F06040089DD8B /* LandMarkListView.swift in Sources */,
+				009BAA3B276EFB670089DD8B /* LandMark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +334,12 @@
 				DEVELOPMENT_TEAM = QH7853B55W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is required for this app.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your Location is required for this app/";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +366,12 @@
 				DEVELOPMENT_TEAM = QH7853B55W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocationDemo/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your location is required for this app.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your Location is required for this app/";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
